@@ -1,0 +1,56 @@
+from pandas import read_csv
+from pandas.plotting import scatter_matrix
+from matplotlib import pyplot
+from sklearn.model_selection import train_test_split
+from sklearn.model_selection import KFold
+from sklearn.model_selection import cross_val_score
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+from sklearn.naive_bayes import GaussianNB
+from sklearn.svm import SVC
+import pandas as pd
+from pandas import set_option
+import seaborn as sns
+%matplotlib inline
+
+names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
+#pd.set_option('display.width', 100)
+dataset = pd.read_csv("iris.csv",names=names)
+dataset.describe()
+from pandas import read_csv
+from pandas.plotting import scatter_matrix
+from matplotlib import pyplot
+from sklearn.model_selection import train_test_split
+from sklearn.model_selection import KFold
+from sklearn.model_selection import cross_val_score
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+from sklearn.naive_bayes import GaussianNB
+from sklearn.svm import SVC
+import pandas as pd
+from pandas import set_option
+import seaborn as sns
+%matplotlib inline
+
+names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
+#pd.set_option('display.width', 100)
+dataset = pd.read_csv("iris.csv",names=names)
+dataset.describe()
+/usr/local/lib/python3.10/dist-packages/pandas/io/common.py in get_handle(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)
+    854         if ioargs.encoding and "b" not in ioargs.mode:
+    855             # Encoding
+--> 856             handle = open(
+    857                 handle,
+    858                 ioargs.mode,
+
+FileNotFoundError: [Errno 2] No such file or directory: 'iris.csv'
